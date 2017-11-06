@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+body, header, ul, li {
+    margin:  0;
+    padding: 0;
+}
+
+body, html { width: 100%; height: 100%;}
+body {
+    background: url("../imgs/bg.jpg") no-repeat;
+    background-size: cover !important;
+}
+
+a  { text-decoration: none; }
+ul { list-style: none; }
+
+header span.line {
+    display: inline-block;
+    width:  0%;
+    height: 1px;
+
+    opacity: 0;
+    background-color: #ddb321;
+    transition: all .5s linear;
+}
+
+header span.active {
+    width: 100%;
+    opacity:  1;
+}
+
+header {
+    width: 100%;
+    min-width: 1100px;
+    height: 120px;
+}
+
+header .row-content {
+    width:  100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+
+    box-sizing: border-box;
+    margin:  0 auto;
+    padding: 0px 50px;
+
+    /*flex 布局，垂直居中*/
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 1000;
+}
+
+
+/*横向菜单*/
+header .menu-list {
+    zoom: 1;
+}
+header .menu-list:after {
+    content: '';
+    display: none;
+    visibility: hidden;
+    clear: both;
+}
+header .menu-list li {
+    float: left;
+    margin-right: 15px;
+
+    position: relative;
+}
+header .menu-list li span.line {
+
+    position: absolute;
+    top:  100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+header .menu-list li > a {
+    color: lightgrey;
+    font-weight: lighter;
+
+    padding: 0 6px 6px 6px;
+}
+
+/*下拉菜单*/
+header .slide-box {
+    width:  100%;
+    min-width: 1100px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, .75);
+
+    transition: top .15s linear;
+
+    position: absolute;
+    top: -100%;
+}
+
+
+header .slide-box .sub-item {
+    width:  81%;
+    height: calc(100% - 120px);
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .slide-box .sub-menu-list > li {
+    width:  35%;
+    height: 70px;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+    padding: 0px 5px;
+    border-bottom: 1px solid #808080;
+
+    position: relative;
+}
+header .slide-box .sub-menu-list > li > span.line {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+header .slide-box .sub-menu-list > li > a {
+    line-height: 70px;
+    font-weight: lighter;
+    color: lightgrey;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
